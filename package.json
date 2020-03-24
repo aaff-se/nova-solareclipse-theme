@@ -1,0 +1,18 @@
+{
+  "name": "nova-solarized-eclipse",
+  "version": "0.0.1",
+  "description": "A solarized dark inspired theme for Nova",
+  "repository": "https://github.com/aaff-se/nova-solarized-eclipse",
+  "scripts": {
+    "scss": "node-sass --watch scss -o SolarEclipse.novaextension/Themes"
+  },
+  "keywords": [
+    "nova",
+    "solarized"
+  ],
+  "author": "Anton Andersson",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

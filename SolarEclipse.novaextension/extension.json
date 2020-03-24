@@ -1,0 +1,9 @@
+{
+    "identifier": "aaff.SolarEclipse",
+    "name": "Solar Eclipse",
+    "vendor": "AAFF",
+    "description": "A solarized dark inspired theme for Nova",
+    "version": "0.1",
+    "categories": ["themes"],
+    "repository": "https://github.com/aaff-se/nova-solarized-eclipse",
+}

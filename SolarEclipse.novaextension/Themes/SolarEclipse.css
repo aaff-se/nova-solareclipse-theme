@@ -1,0 +1,217 @@
+meta {
+  -theme-interface-style: dark;
+  -theme-vibrancy: none;
+  -theme-accent-color: false; }
+
+/*
+ * Window styles
+ */
+/*
+ * Document styles
+ */
+meta.document {
+  background-color: #02022c;
+  border-color: #000024; }
+
+/* Text */
+meta.text {
+  color: #96a0a0; }
+
+meta.text.invisible {
+  color: #282842; }
+
+/* Cursor */
+meta.cursor {
+  background-color: #000024; }
+
+/* Indentation Guides */
+meta.indentguide {
+  border-color: #282842; }
+
+/* Gutter */
+meta.gutter {
+  color: #abb3b3; }
+
+meta.gutter.selected {
+  background-color: #000024;
+  color: #96a0a0; }
+
+/*
+ * Syntax styles
+ */
+keyword {
+  color: #cb5f16; }
+
+comment {
+  color: #586e75; }
+
+processing {
+  color: #586e75; }
+
+declaration {
+  color: #586e75; }
+
+bracket {
+  color: #8c8c00; }
+
+operator {
+  color: #8c8c00; }
+
+invalid {
+  color: #dc322f; }
+
+link {
+  color: #7671c4; }
+
+value {
+  color: #28ac9f; }
+
+value.boolean {
+  color: #cb5f16; }
+
+value.null {
+  color: #586e75; }
+
+value.number {
+  color: #d45180; }
+
+value.entity {
+  color: #499fe7; }
+
+value.symbol {
+  color: #499fe7; }
+
+string {
+  color: #28ac9f; }
+
+string.key {
+  color: #499fe7; }
+
+string-template {
+  color: #28ac9f; }
+
+string-template.value {
+  color: #499fe7; }
+
+regex {
+  color: #dc322f; }
+
+cdata {
+  color: #dc322f; }
+
+identifier {
+  color: #96a0a0; }
+
+identifier.type {
+  color: #28ac9f; }
+
+identifier.global {
+  color: #cb5f16; }
+
+identifier.variable {
+  color: #499fe7; }
+
+identifier.constant {
+  color: #499fe7; }
+
+identifier.property {
+  color: #cb5f16; }
+
+identifier.decorator {
+  color: #d45180; }
+
+identifier.function {
+  color: #96a0a0; }
+
+identifier.method {
+  color: #96a0a0; }
+
+identifier.key {
+  color: #499fe7; }
+
+identifier.argument {
+  color: #96a0a0; }
+
+identifier.core {
+  color: #cb5f16; }
+
+definition {
+  color: #96a0a0; }
+
+tag {
+  color: #499fe7; }
+
+tag.framework {
+  color: #586e75; }
+
+tag.attribute {
+  color: #96a0a0; }
+
+tag.attribute.name {
+  color: #96a0a0; }
+
+tag.attribute.value {
+  color: #28ac9f; }
+
+style {
+  color: #96a0a0; }
+
+style.at {
+  color: #cb5f16; }
+
+style.selector {
+  color: #96a0a0; }
+
+style.selector.element {
+  color: #96a0a0; }
+
+style.selector.identifier.id {
+  color: #96a0a0; }
+
+style.selector.identifier.class {
+  color: #96a0a0; }
+
+style.selector.pseudoclass {
+  color: #8c8c00; }
+
+style.selector.pseudoelement {
+  color: #8c8c00; }
+
+style.attribute.name {
+  color: #cb5f16; }
+
+style.value {
+  color: #28ac9f; }
+
+style.value.number {
+  color: #d45180; }
+
+style.value.color {
+  color: #d45180; }
+
+style.value.color.named {
+  color: #8c8c00; }
+
+style.value.keyword {
+  color: #28ac9f; }
+
+markup {
+  color: #96a0a0; }
+
+markup.heading {
+  color: #dc322f; }
+
+markup.bold {
+  font-weight: bold; }
+
+markup.italic {
+  font-style: italic; }
+
+markup.strikethrough {
+  text-decoration: line-through; }
+
+markup.code {
+  color: #28ac9f; }
+
+markup.link {
+  color: #8c8c00; }

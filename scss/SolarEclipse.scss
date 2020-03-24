@@ -1,0 +1,291 @@
+@import "settings/colors.scss";
+
+meta {
+  -theme-interface-style: dark;
+  -theme-vibrancy: none;
+  -theme-accent-color: false;
+}
+
+/*
+ * Window styles
+ */
+
+/*
+ * Document styles
+ */
+
+meta.document {
+  background-color: $background-color;
+  border-color: $background-highlight;
+}
+
+/* Text */
+meta.text {
+  color: $text-color;
+}
+meta.text.invisible {
+  color: $invisible;
+}
+meta.text.selected {
+}
+
+/* Cursor */
+meta.cursor {
+  background-color: $background-darker;
+}
+
+/* Indentation Guides */
+meta.indentguide {
+  border-color: $invisible;
+}
+
+/* Gutter */
+meta.gutter {
+  color: $gutter-text-color;
+}
+meta.gutter.selected {
+  background-color: $gutter-background-color-selected;
+  color: $gutter-text-color-selected;
+}
+
+/*
+ * Syntax styles
+ */
+
+keyword {
+  color: $orange;
+}
+
+comment {
+  color: $grey;
+}
+
+processing {
+  color: $grey;
+}
+
+declaration {
+  color: $grey;
+}
+
+bracket {
+  color: $yellow;
+}
+
+operator {
+  color: $yellow;
+}
+
+invalid {
+  color: $red;
+}
+
+link {
+  color: $purple;
+}
+
+value {
+  color: $green;
+}
+value.boolean {
+  color: $orange;
+}
+value.null {
+  color: $grey;
+}
+value.number {
+  color: $pink;
+}
+value.entity {
+  color: $blue;
+}
+value.symbol {
+  color: $blue;
+}
+
+string {
+  color: $green;
+}
+string.key {
+  color: $blue;
+}
+
+string-template {
+  color: $green;
+}
+string-template.value {
+  color: $blue;
+}
+
+regex {
+  color: $red;
+}
+regex.escaped {
+}
+
+cdata {
+  color: $red;
+}
+
+identifier {
+  color: $white;
+}
+identifier.type {
+  color: $green;
+}
+identifier.type.class {
+}
+identifier.type.protocol {
+}
+identifier.type.enum {
+}
+identifier.type.union {
+}
+identifier.type.struct {
+}
+identifier.global {
+  color: $orange;
+}
+identifier.variable {
+  color: $blue;
+}
+identifier.constant {
+  color: $blue;
+}
+identifier.property {
+  color: $orange;
+}
+identifier.decorator {
+  color: $pink;
+}
+identifier.function {
+  color: $white;
+}
+identifier.method {
+  color: $white;
+}
+identifier.key {
+  color: $blue;
+}
+identifier.argument {
+  color: $white;
+}
+identifier.core {
+  color: $orange;
+}
+
+definition {
+  color: $white;
+}
+definition.type {
+}
+definition.class {
+}
+definition.package {
+}
+definition.protocol {
+}
+definition.enum {
+}
+definition.union {
+}
+definition.struct {
+}
+definition.property {
+}
+definition.function {
+}
+definition.method {
+}
+
+tag {
+  color: $blue;
+}
+tag.framework {
+  color: $grey;
+}
+tag.attribute {
+  color: $white;
+}
+tag.attribute.name {
+  color: $white;
+}
+tag.attribute.value {
+  color: $green;
+}
+
+style {
+  color: $white;
+}
+style.at {
+  color: $orange;
+}
+style.selector {
+  color: $white;
+}
+style.selector.element {
+  color: $white;
+}
+style.selector.identifier.id {
+  color: $white;
+}
+style.selector.identifier.class {
+  color: $white;
+}
+style.selector.pseudoclass {
+  color: $yellow;
+}
+style.selector.pseudoelement {
+  color: $yellow;
+}
+style.attribute {
+}
+style.attribute.name {
+  color: $orange;
+}
+style.value {
+  color: $green;
+}
+style.value.number {
+  color: $pink;
+}
+style.value.color {
+  color: $pink;
+}
+style.value.color.named {
+  color: $yellow;
+}
+style.value.color.hex {
+}
+style.value.keyword {
+  color: $green;
+}
+
+markup {
+  color: $white;
+}
+markup.heading {
+  color: $red;
+}
+markup.line {
+}
+markup.bold {
+  font-weight: bold;
+}
+markup.italic {
+  font-style: italic;
+}
+markup.strikethrough {
+  text-decoration: line-through;
+}
+markup.list {
+}
+
+markup.list.item {
+}
+markup.code {
+  color: $green;
+}
+markup.link {
+  color: $yellow;
+}

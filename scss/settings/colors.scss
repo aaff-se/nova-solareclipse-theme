@@ -1,0 +1,33 @@
+// ALL COLORS
+
+$background-darker: rgb(0,0,36);
+$background: rgb(2,2,44);
+$background-highlight: $background-darker;
+$invisible: rgb(40,40,66);
+
+$white: rgb(150,160,160);
+$grey: rgb(88,110,117);
+
+$blue: rgb(73,159,231);
+
+$red: rgb(220,50,47);
+$pink: rgb(212,81,128);
+$orange: rgb(203,95,22);
+$yellow: rgb(140,140,0);
+$green: rgb(40,172,159);
+$purple: rgb(118,113,196);
+
+// ––––––––––––––––––––––––––
+
+$text-color: $white;
+$background-color: $background;
+$accent: $green;
+
+$selection-color: lighten($background-color, 5%);
+
+$gutter-text-color: lighten($text-color, 8%);
+$gutter-text-color-selected: $white;
+$gutter-background-color-selected: $background-highlight;
+
+$window-background-color: $background-darker;
+$window-border-color: $background-highlight;
