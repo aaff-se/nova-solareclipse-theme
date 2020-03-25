@@ -2,11 +2,11 @@
   "identifier": "aaff.SolarEclipse",
   "name": "SolarEclipse",
   "vendor": "AAFF",
-  "description": "A solarized dark inspired theme",
-  "version": "1.0",
+  "description": "A higher contrast solarized dark inspired theme",
+  "version": "0.1.0",
   "categories": ["themes"],
   "repository": "https://github.com/aaff-se/nova-solareclipse-theme",
-  "license": "MIT",
+  "homepage": "https://www.aaff.se",
   "bugs": {
     "url": "https://github.com/aaff-se/nova-solareclipse-theme/issues"
   }

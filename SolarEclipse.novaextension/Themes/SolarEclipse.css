@@ -7,29 +7,29 @@ meta {
  * Window styles
  */
 meta.window {
-  background-color: #020228;
+  background-color: #02022c;
   border-color: #020021; }
 
 meta.titlebar {
   color: #96a0a0;
-  background: #020228;
+  background: #02022c;
   border-color: #282842; }
 
 meta.titlebar.inactive {
   background-color: #020021; }
 
 meta.button {
-  background: #020228;
+  background: #02022c;
   border: #28ac9f;
   color: #28ac9f; }
 
 meta.button.highlighted {
   background: #28ac9f;
   border: #28ac9f;
-  color: #020228; }
+  color: #02022c; }
 
 meta.button.selected {
-  background: #020228;
+  background: #02022c;
   border: #96a0a0;
   color: #96a0a0; }
 
@@ -39,7 +39,7 @@ meta.button.highlighted.selected {
   color: #96a0a0; }
 
 meta.button.disabled {
-  background: #020228;
+  background: #02022c;
   border: #586e75;
   color: #586e75; }
 
@@ -54,7 +54,7 @@ meta.accent {
  * Document styles
  */
 meta.document {
-  background-color: #020228;
+  background-color: #02022c;
   border-color: #282842; }
 
 /* Text */
@@ -218,7 +218,7 @@ tag {
   color: #3f95dd; }
 
 tag.framework {
-  color: #3f95dd; }
+  color: #586e75; }
 
 tag.attribute.name {
   color: #96a0a0; }

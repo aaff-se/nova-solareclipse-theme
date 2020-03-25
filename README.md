@@ -4,5 +4,4 @@ A inital Solarized dark theme, tweaked by personal preference over the years. St
 
 
 #### ToDo
-* colors for the window
 * any color target for php variables?
