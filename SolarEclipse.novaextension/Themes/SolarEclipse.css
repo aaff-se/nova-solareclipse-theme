@@ -1,61 +1,62 @@
 meta {
   -theme-interface-style: dark;
   -theme-vibrancy: false;
-  -theme-accent-color: auto; }
+  -theme-accent-color: false; }
 
 /*
- * Window styles
+ * Window and Document styles
  */
-meta.window {
+meta.window,
+meta.document {
   background-color: #02022c;
-  border-color: #020021; }
+  border-color: #282842; }
 
 meta.titlebar {
   color: #96a0a0;
-  background: #02022c;
+  background-color: #02022c;
   border-color: #282842; }
 
 meta.titlebar.inactive {
   background-color: #020021; }
 
-meta.button {
-  background: #02022c;
-  border: #28ac9f;
-  color: #28ac9f; }
-
-meta.button.highlighted {
-  background: #28ac9f;
-  border: #28ac9f;
-  color: #02022c; }
-
-meta.button.selected {
-  background: #02022c;
-  border: #96a0a0;
-  color: #96a0a0; }
-
-meta.button.highlighted.selected {
-  background: #28ac9f;
-  border: #96a0a0;
-  color: #96a0a0; }
-
-meta.button.disabled {
-  background: #02022c;
-  border: #586e75;
+meta.button,
+meta.document.button {
+  background-color: #02022c;
+  border-color: #586e75;
   color: #586e75; }
 
-meta.textfield {
+meta.button.highlighted,
+meta.document.button.highlighted {
+  background-color: #586e75;
+  border-color: #586e75;
+  color: #02022c; }
+
+meta.button.selected,
+meta.document.button.selected {
+  background-color: #586e75;
+  border-color: #96a0a0;
+  color: #96a0a0; }
+
+meta.button.highlighted.selected,
+meta.document.button.highlighted.selected {
   background-color: #96a0a0;
-  border-color: #586e75; }
+  border-color: #96a0a0;
+  color: #586e75; }
+
+meta.button.disabled,
+meta.document.button.disabled {
+  background-color: #02022c;
+  border-color: #282842;
+  color: #282842; }
+
+meta.textfield,
+meta.document.textfield {
+  background-color: #02022c;
+  border-color: #282842;
+  color: #96a0a0; }
 
 meta.accent {
   color: #28ac9f; }
-
-/*
- * Document styles
- */
-meta.document {
-  background-color: #02022c;
-  border-color: #282842; }
 
 /* Text */
 meta.text {
@@ -77,7 +78,8 @@ meta.indentguide {
 
 /* Gutter */
 meta.gutter {
-  color: #586e75; }
+  color: #586e75;
+  background-color: #282842; }
 
 meta.gutter.selected {
   background-color: #282842;

@@ -3,86 +3,67 @@
 meta {
   -theme-interface-style: dark;
   -theme-vibrancy: false;
-  -theme-accent-color: auto;
+  -theme-accent-color: false;
 }
 
 /*
- * Window styles
+ * Window and Document styles
  */
-meta.window {
+meta.window,
+meta.document {
   background-color: $background;
-  border-color: $background-darker;
+  border-color: $background-lighter;
 }
 meta.titlebar {
   color: $white;
-  background: $background;
+  background-color: $background;
   border-color: $background-lighter;
 }
 meta.titlebar.inactive {
   background-color: $background-darker;
 }
 
-meta.button {
-  background: $background;
-  border: $green;
-  color: $green;
-}
-meta.button.highlighted {
-  background: $green;
-  border: $green;
-  color: $background;
-}
-meta.button.selected {
-  background: $background;
-  border: $white;
-  color: $white;
-}
-meta.button.highlighted.selected {
-  background: $green;
-  border: $white;
-  color: $white;
-}
-meta.button.disabled {
-  background: $background;
-  border: $grey;
+meta.button,
+meta.document.button {
+  background-color: $background;
+  border-color: $grey;
   color: $grey;
 }
-
-meta.textfield {
-  background-color: $white;
+meta.button.highlighted,
+meta.document.button.highlighted {
+  background-color: $grey;
   border-color: $grey;
+  color: $background;
+}
+meta.button.selected,
+meta.document.button.selected {
+  background-color: $grey;
+  border-color: $white;
+  color: $white;
+}
+meta.button.highlighted.selected,
+meta.document.button.highlighted.selected {
+  background-color: $white;
+  border-color: $white;
+  color: $grey;
+}
+meta.button.disabled,
+meta.document.button.disabled {
+  background-color: $background;
+  border-color: $background-lighter;
+  color: $background-lighter;
+}
+
+meta.textfield,
+meta.document.textfield {
+  background-color: $background;
+  border-color: $background-lighter;
+  color: $white;
 }
 
 meta.accent {
   color: $green;
 }
-
-/*
- * Document styles
- */
-meta.document {
-  background-color: $background;
-  border-color: $background-lighter;
-}
-
-// meta.document.button {
-//   background: linear-gradient(hsb(210, 10%, 26%), hsb(210, 10%, 22%));
-//   border: linear-gradient(hsb(210, 10%, 12%), hsb(210, 10%, 8%));
-// }
-// meta.document.button.disabled {
-//   background: linear-gradient(
-//     hsba(220, 10%, 26%, 0.3),
-//     hsba(220, 10%, 22%, 0.3)
-//   );
-// }
-// meta.document.button.highlighted {
-//   background: linear-gradient(hsb(210, 10%, 36%), hsb(210, 10%, 32%));
-// }
-//
-// meta.document.textfield {
-//   background-color: hsb(210, 10%, 10%);
-//   border-color: hsb(210, 10%, 6%);
-// }
 
 /* Text */
 meta.text {
@@ -108,6 +89,7 @@ meta.indentguide {
 /* Gutter */
 meta.gutter {
   color: $grey;
+  background-color: $background-lighter;
 }
 meta.gutter.selected {
   background-color: $background-lighter;
