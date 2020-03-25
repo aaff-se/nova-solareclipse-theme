@@ -10,8 +10,8 @@ meta {
  * Window styles
  */
 meta.window {
-  background-color: $background-darker;
-  border-color: $background;
+  background-color: $background;
+  border-color: $background-darker;
 }
 meta.titlebar {
   color: $white;
@@ -61,8 +61,8 @@ meta.accent {
  * Document styles
  */
 meta.document {
-  background-color: $background-darker;
-  border-color: $background;
+  background-color: $background;
+  border-color: $background-lighter;
 }
 
 // meta.document.button {
@@ -97,7 +97,7 @@ meta.text.selected {
 
 /* Cursor */
 meta.cursor {
-  background-color: $background;
+  background-color: $background-darker;
 }
 
 /* Indentation Guides */

@@ -4,5 +4,10 @@
   "vendor": "AAFF",
   "description": "A solarized dark inspired theme",
   "version": "1.0",
-  "categories": ["themes"]
+  "categories": ["themes"],
+  "repository": "https://github.com/aaff-se/nova-solareclipse-theme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaff-se/nova-solareclipse-theme/issues"
+  }
 }

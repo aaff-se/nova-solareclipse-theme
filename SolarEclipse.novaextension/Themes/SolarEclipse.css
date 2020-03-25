@@ -7,29 +7,29 @@ meta {
  * Window styles
  */
 meta.window {
-  background-color: #000024;
-  border-color: #02022c; }
+  background-color: #020228;
+  border-color: #020021; }
 
 meta.titlebar {
   color: #96a0a0;
-  background: #02022c;
+  background: #020228;
   border-color: #282842; }
 
 meta.titlebar.inactive {
-  background-color: #000024; }
+  background-color: #020021; }
 
 meta.button {
-  background: #02022c;
+  background: #020228;
   border: #28ac9f;
   color: #28ac9f; }
 
 meta.button.highlighted {
   background: #28ac9f;
   border: #28ac9f;
-  color: #02022c; }
+  color: #020228; }
 
 meta.button.selected {
-  background: #02022c;
+  background: #020228;
   border: #96a0a0;
   color: #96a0a0; }
 
@@ -39,7 +39,7 @@ meta.button.highlighted.selected {
   color: #96a0a0; }
 
 meta.button.disabled {
-  background: #02022c;
+  background: #020228;
   border: #586e75;
   color: #586e75; }
 
@@ -54,8 +54,8 @@ meta.accent {
  * Document styles
  */
 meta.document {
-  background-color: #000024;
-  border-color: #02022c; }
+  background-color: #020228;
+  border-color: #282842; }
 
 /* Text */
 meta.text {
@@ -69,7 +69,7 @@ meta.text.selected {
 
 /* Cursor */
 meta.cursor {
-  background-color: #02022c; }
+  background-color: #020021; }
 
 /* Indentation Guides */
 meta.indentguide {
