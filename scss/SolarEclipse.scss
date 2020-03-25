@@ -1,51 +1,117 @@
-@import "settings/colors.scss";
+@import "settings/_colors.scss";
 
 meta {
   -theme-interface-style: dark;
-  -theme-vibrancy: none;
-  -theme-accent-color: false;
+  -theme-vibrancy: false;
+  -theme-accent-color: auto;
 }
 
 /*
  * Window styles
  */
+meta.window {
+  background-color: $background-darker;
+  border-color: $background;
+}
+meta.titlebar {
+  color: $white;
+  background: $background;
+  border-color: $background-lighter;
+}
+meta.titlebar.inactive {
+  background-color: $background-darker;
+}
+
+meta.button {
+  background: $background;
+  border: $green;
+  color: $green;
+}
+meta.button.highlighted {
+  background: $green;
+  border: $green;
+  color: $background;
+}
+meta.button.selected {
+  background: $background;
+  border: $white;
+  color: $white;
+}
+meta.button.highlighted.selected {
+  background: $green;
+  border: $white;
+  color: $white;
+}
+meta.button.disabled {
+  background: $background;
+  border: $grey;
+  color: $grey;
+}
+
+meta.textfield {
+  background-color: $white;
+  border-color: $grey;
+}
+
+meta.accent {
+  color: $green;
+}
 
 /*
  * Document styles
  */
-
 meta.document {
-  background-color: $background-color;
-  border-color: $background-highlight;
+  background-color: $background-darker;
+  border-color: $background;
 }
+
+// meta.document.button {
+//   background: linear-gradient(hsb(210, 10%, 26%), hsb(210, 10%, 22%));
+//   border: linear-gradient(hsb(210, 10%, 12%), hsb(210, 10%, 8%));
+// }
+// meta.document.button.disabled {
+//   background: linear-gradient(
+//     hsba(220, 10%, 26%, 0.3),
+//     hsba(220, 10%, 22%, 0.3)
+//   );
+// }
+// meta.document.button.highlighted {
+//   background: linear-gradient(hsb(210, 10%, 36%), hsb(210, 10%, 32%));
+// }
+//
+// meta.document.textfield {
+//   background-color: hsb(210, 10%, 10%);
+//   border-color: hsb(210, 10%, 6%);
+// }
 
 /* Text */
 meta.text {
-  color: $text-color;
+  color: $white;
 }
 meta.text.invisible {
-  color: $invisible;
+  color: $background-lighter;
 }
 meta.text.selected {
+  background-color: $background-lighter;
 }
 
 /* Cursor */
 meta.cursor {
-  background-color: $background-darker;
+  background-color: $background;
 }
 
 /* Indentation Guides */
 meta.indentguide {
-  border-color: $invisible;
+  border-color: $background-lighter;
 }
 
 /* Gutter */
 meta.gutter {
-  color: $gutter-text-color;
+  color: $grey;
 }
 meta.gutter.selected {
-  background-color: $gutter-background-color-selected;
-  color: $gutter-text-color-selected;
+  background-color: $background-lighter;
+  color: hsb(210, 10%, 80%);
 }
 
 /*
@@ -55,38 +121,29 @@ meta.gutter.selected {
 keyword {
   color: $orange;
 }
-
 comment {
   color: $grey;
 }
-
 processing {
   color: $grey;
 }
-
 declaration {
   color: $grey;
 }
-
 bracket {
   color: $yellow;
 }
-
 operator {
   color: $yellow;
 }
-
 invalid {
   color: $red;
 }
-
 link {
   color: $purple;
 }
 
-value {
-  color: $green;
-}
+/* Values */
 value.boolean {
   color: $orange;
 }
@@ -100,48 +157,15 @@ value.entity {
   color: $blue;
 }
 value.symbol {
-  color: $blue;
+  color: $orange;
 }
 
-string {
-  color: $green;
-}
-string.key {
-  color: $blue;
-}
-
-string-template {
-  color: $green;
-}
-string-template.value {
-  color: $blue;
-}
-
-regex {
-  color: $red;
-}
-regex.escaped {
-}
-
-cdata {
-  color: $red;
-}
-
-identifier {
-  color: $white;
-}
+/* Identifiers */
 identifier.type {
-  color: $green;
+  color: $yellow;
 }
-identifier.type.class {
-}
-identifier.type.protocol {
-}
-identifier.type.enum {
-}
-identifier.type.union {
-}
-identifier.type.struct {
+identifier.constant {
+  color: $white;
 }
 identifier.global {
   color: $orange;
@@ -149,63 +173,91 @@ identifier.global {
 identifier.variable {
   color: $blue;
 }
-identifier.constant {
-  color: $blue;
-}
-identifier.property {
-  color: $orange;
-}
-identifier.decorator {
-  color: $pink;
-}
-identifier.function {
-  color: $white;
-}
+identifier.property,
+identifier.decorator,
+identifier.function,
 identifier.method {
   color: $white;
 }
 identifier.key {
-  color: $blue;
-}
-identifier.argument {
-  color: $white;
-}
-identifier.core {
   color: $orange;
 }
+identifier.argument {
+  color: $blue;
+}
 
-definition {
+/* Strings */
+string {
+  color: $green;
+}
+string.key {
   color: $white;
 }
-definition.type {
+string-template {
+  color: $green;
 }
-definition.class {
+string-template.value {
+  color: $white;
 }
-definition.package {
+regex {
+  color: $red;
 }
-definition.protocol {
+regex.escaped {
+  color: $red;
 }
-definition.enum {
-}
-definition.union {
-}
-definition.struct {
-}
-definition.property {
-}
-definition.function {
-}
-definition.method {
+cdata {
+  color: $red;
 }
 
+/* Markup */
+markup.heading {
+  color: $red;
+}
+markup.line {
+  color: $yellow;
+}
+markup.bold {
+  color: $white;
+  font-weight: bold;
+}
+markup.italic {
+  color: $white;
+  font-style: italic;
+}
+markup.strikethrough {
+  color: $grey;
+}
+markup.list.item {
+  color: $orange;
+}
+markup.code {
+  color: $green;
+}
+
+/* Types */
+definition.class class.name,
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name {
+  font-weight: bold;
+  color: $yellow;
+}
+
+/* Members */
+definition.property property.name,
+definition.function function.name,
+definition.method method.name {
+  color: $white;
+}
+
+/* Tags */
 tag {
   color: $blue;
 }
 tag.framework {
-  color: $grey;
-}
-tag.attribute {
-  color: $white;
+  color: $blue;
 }
 tag.attribute.name {
   color: $white;
@@ -213,21 +265,24 @@ tag.attribute.name {
 tag.attribute.value {
   color: $green;
 }
+tag.attribute.value.link {
+  color: $purple;
+}
 
+/* Styles */
 style {
   color: $white;
 }
 style.at {
   color: $orange;
-}
-style.selector {
-  color: $white;
+  font-weight: bold;
 }
 style.selector.element {
+  font-weight: bold;
   color: $white;
 }
 style.selector.identifier.id {
-  color: $white;
+  color: $red;
 }
 style.selector.identifier.class {
   color: $white;
@@ -238,54 +293,18 @@ style.selector.pseudoclass {
 style.selector.pseudoelement {
   color: $yellow;
 }
-style.attribute {
-}
 style.attribute.name {
   color: $orange;
-}
-style.value {
-  color: $green;
 }
 style.value.number {
   color: $pink;
 }
-style.value.color {
-  color: $pink;
-}
-style.value.color.named {
-  color: $yellow;
-}
 style.value.color.hex {
+  color: $blue;
 }
 style.value.keyword {
-  color: $green;
+  color: $yellow;
 }
-
-markup {
-  color: $white;
-}
-markup.heading {
-  color: $red;
-}
-markup.line {
-}
-markup.bold {
-  font-weight: bold;
-}
-markup.italic {
-  font-style: italic;
-}
-markup.strikethrough {
-  text-decoration: line-through;
-}
-markup.list {
-}
-
-markup.list.item {
-}
-markup.code {
-  color: $green;
-}
-markup.link {
+style.value.color.named {
   color: $yellow;
 }

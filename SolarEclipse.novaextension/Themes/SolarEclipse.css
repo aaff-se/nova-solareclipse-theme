@@ -1,17 +1,61 @@
 meta {
   -theme-interface-style: dark;
-  -theme-vibrancy: none;
-  -theme-accent-color: false; }
+  -theme-vibrancy: false;
+  -theme-accent-color: auto; }
 
 /*
  * Window styles
  */
+meta.window {
+  background-color: #000024;
+  border-color: #02022c; }
+
+meta.titlebar {
+  color: #96a0a0;
+  background: #02022c;
+  border-color: #282842; }
+
+meta.titlebar.inactive {
+  background-color: #000024; }
+
+meta.button {
+  background: #02022c;
+  border: #28ac9f;
+  color: #28ac9f; }
+
+meta.button.highlighted {
+  background: #28ac9f;
+  border: #28ac9f;
+  color: #02022c; }
+
+meta.button.selected {
+  background: #02022c;
+  border: #96a0a0;
+  color: #96a0a0; }
+
+meta.button.highlighted.selected {
+  background: #28ac9f;
+  border: #96a0a0;
+  color: #96a0a0; }
+
+meta.button.disabled {
+  background: #02022c;
+  border: #586e75;
+  color: #586e75; }
+
+meta.textfield {
+  background-color: #96a0a0;
+  border-color: #586e75; }
+
+meta.accent {
+  color: #28ac9f; }
+
 /*
  * Document styles
  */
 meta.document {
-  background-color: #02022c;
-  border-color: #000024; }
+  background-color: #000024;
+  border-color: #02022c; }
 
 /* Text */
 meta.text {
@@ -20,9 +64,12 @@ meta.text {
 meta.text.invisible {
   color: #282842; }
 
+meta.text.selected {
+  background-color: #282842; }
+
 /* Cursor */
 meta.cursor {
-  background-color: #000024; }
+  background-color: #02022c; }
 
 /* Indentation Guides */
 meta.indentguide {
@@ -30,11 +77,11 @@ meta.indentguide {
 
 /* Gutter */
 meta.gutter {
-  color: #abb3b3; }
+  color: #586e75; }
 
 meta.gutter.selected {
-  background-color: #000024;
-  color: #96a0a0; }
+  background-color: #282842;
+  color: hsb(210, 10%, 80%); }
 
 /*
  * Syntax styles
@@ -63,9 +110,7 @@ invalid {
 link {
   color: #7671c4; }
 
-value {
-  color: #28ac9f; }
-
+/* Values */
 value.boolean {
   color: #cb5f16; }
 
@@ -76,76 +121,104 @@ value.number {
   color: #d45180; }
 
 value.entity {
-  color: #499fe7; }
+  color: #3f95dd; }
 
 value.symbol {
-  color: #499fe7; }
+  color: #cb5f16; }
 
-string {
-  color: #28ac9f; }
-
-string.key {
-  color: #499fe7; }
-
-string-template {
-  color: #28ac9f; }
-
-string-template.value {
-  color: #499fe7; }
-
-regex {
-  color: #dc322f; }
-
-cdata {
-  color: #dc322f; }
-
-identifier {
-  color: #96a0a0; }
-
+/* Identifiers */
 identifier.type {
-  color: #28ac9f; }
+  color: #8c8c00; }
+
+identifier.constant {
+  color: #96a0a0; }
 
 identifier.global {
   color: #cb5f16; }
 
 identifier.variable {
-  color: #499fe7; }
+  color: #3f95dd; }
 
-identifier.constant {
-  color: #499fe7; }
-
-identifier.property {
-  color: #cb5f16; }
-
-identifier.decorator {
-  color: #d45180; }
-
-identifier.function {
-  color: #96a0a0; }
-
+identifier.property,
+identifier.decorator,
+identifier.function,
 identifier.method {
   color: #96a0a0; }
 
 identifier.key {
-  color: #499fe7; }
-
-identifier.argument {
-  color: #96a0a0; }
-
-identifier.core {
   color: #cb5f16; }
 
-definition {
+identifier.argument {
+  color: #3f95dd; }
+
+/* Strings */
+string {
+  color: #28ac9f; }
+
+string.key {
   color: #96a0a0; }
 
-tag {
-  color: #499fe7; }
+string-template {
+  color: #28ac9f; }
 
-tag.framework {
+string-template.value {
+  color: #96a0a0; }
+
+regex {
+  color: #dc322f; }
+
+regex.escaped {
+  color: #dc322f; }
+
+cdata {
+  color: #dc322f; }
+
+/* Markup */
+markup.heading {
+  color: #dc322f; }
+
+markup.line {
+  color: #8c8c00; }
+
+markup.bold {
+  color: #96a0a0;
+  font-weight: bold; }
+
+markup.italic {
+  color: #96a0a0;
+  font-style: italic; }
+
+markup.strikethrough {
   color: #586e75; }
 
-tag.attribute {
+markup.list.item {
+  color: #cb5f16; }
+
+markup.code {
+  color: #28ac9f; }
+
+/* Types */
+definition.class class.name,
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name {
+  font-weight: bold;
+  color: #8c8c00; }
+
+/* Members */
+definition.property property.name,
+definition.function function.name,
+definition.method method.name {
   color: #96a0a0; }
+
+/* Tags */
+tag {
+  color: #3f95dd; }
+
+tag.framework {
+  color: #3f95dd; }
 
 tag.attribute.name {
   color: #96a0a0; }
@@ -153,20 +226,23 @@ tag.attribute.name {
 tag.attribute.value {
   color: #28ac9f; }
 
+tag.attribute.value.link {
+  color: #7671c4; }
+
+/* Styles */
 style {
   color: #96a0a0; }
 
 style.at {
-  color: #cb5f16; }
-
-style.selector {
-  color: #96a0a0; }
+  color: #cb5f16;
+  font-weight: bold; }
 
 style.selector.element {
+  font-weight: bold;
   color: #96a0a0; }
 
 style.selector.identifier.id {
-  color: #96a0a0; }
+  color: #dc322f; }
 
 style.selector.identifier.class {
   color: #96a0a0; }
@@ -180,38 +256,14 @@ style.selector.pseudoelement {
 style.attribute.name {
   color: #cb5f16; }
 
-style.value {
-  color: #28ac9f; }
-
 style.value.number {
   color: #d45180; }
 
-style.value.color {
-  color: #d45180; }
-
-style.value.color.named {
-  color: #8c8c00; }
+style.value.color.hex {
+  color: #3f95dd; }
 
 style.value.keyword {
-  color: #28ac9f; }
+  color: #8c8c00; }
 
-markup {
-  color: #96a0a0; }
-
-markup.heading {
-  color: #dc322f; }
-
-markup.bold {
-  font-weight: bold; }
-
-markup.italic {
-  font-style: italic; }
-
-markup.strikethrough {
-  text-decoration: line-through; }
-
-markup.code {
-  color: #28ac9f; }
-
-markup.link {
+style.value.color.named {
   color: #8c8c00; }
