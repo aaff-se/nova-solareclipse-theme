@@ -4,5 +4,4 @@ A inital Solarized dark theme, tweaked by personal preference over the years. St
 
 
 #### ToDo
-* any color target for scss variables?
 * colors inside scss media queries?
