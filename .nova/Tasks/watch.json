@@ -1,0 +1,11 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "npm run scss"
+    }
+  },
+  "identifier" : "63EA7360-C30C-42E8-ADC2-D87697C6F053",
+  "openLogOnRun" : "start",
+  "persistent" : true
+}
