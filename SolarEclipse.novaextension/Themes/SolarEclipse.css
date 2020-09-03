@@ -235,9 +235,33 @@ tag.attribute.value.link {
 style {
   color: #96a0a0; }
 
+style.attribute-list.bracket {
+  color: #8c8c00; }
+
 style.at {
   color: #cb5f16;
   font-weight: bold; }
+
+style.at-rule {
+  color: #cb5f16;
+  font-weight: bold; }
+
+style.at-rule.media.at {
+  color: #cb5f16;
+  font-weight: bold; }
+
+style.media-query-list.operator {
+  color: #cb5f16; }
+
+style.media-feature.keyword {
+  color: #cb5f16; }
+
+style.include.at {
+  color: #cb5f16;
+  font-weight: bold; }
+
+style.include.name {
+  color: #3f95dd; }
 
 style.selector.element {
   font-weight: bold;

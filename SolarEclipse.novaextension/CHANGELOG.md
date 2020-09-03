@@ -1,3 +1,7 @@
+## Version 0.1.2
+
+Added / Updated colors for brackets in css/scss
+
 ## Version 0.1.1
 
 Added / Updated colors for window and buttons

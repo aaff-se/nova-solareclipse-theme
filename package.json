@@ -1,6 +1,6 @@
 {
-  "name": "nova-solarized-eclipse",
-  "version": "0.1.1",
+  "name": "nova-solar-eclipse",
+  "version": "0.1.2",
   "description": "A solarized dark inspired theme for Nova",
   "repository": "https://github.com/aaff-se/nova-solareclipse-theme",
   "scripts": {

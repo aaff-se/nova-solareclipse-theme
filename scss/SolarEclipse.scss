@@ -255,10 +255,42 @@ tag.attribute.value.link {
 style {
   color: $white;
 }
+
+style.attribute-list.bracket {
+  color: $yellow;
+}
+
 style.at {
   color: $orange;
   font-weight: bold;
 }
+style.at-rule {
+  color: $orange;
+  font-weight: bold;
+}
+
+style.at-rule.media.at {
+  color: $orange;
+  font-weight: bold;
+}
+style.media-query-list.operator {
+  color: $orange;
+}
+
+style.media-feature.keyword {
+  color: $orange;
+}
+
+
+style.include.at {
+  color: $orange;
+  font-weight: bold;
+}
+style.include.name {
+    color: $blue;
+}
+
+
 style.selector.element {
   font-weight: bold;
   color: $white;
