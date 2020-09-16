@@ -1,3 +1,7 @@
+## Version 0.1.3
+
+Added image to readme, and a retina icon
+
 ## Version 0.1.2
 
 Added / Updated colors for brackets in css/scss
