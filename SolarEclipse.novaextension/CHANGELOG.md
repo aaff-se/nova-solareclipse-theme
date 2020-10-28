@@ -1,3 +1,7 @@
+## Version 0.1.4
+
+Removed some font weight stylings for css/scss
+
 ## Version 0.1.3
 
 Added image to readme, and a retina icon
