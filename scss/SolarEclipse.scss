@@ -262,16 +262,16 @@ style.attribute-list.bracket {
 
 style.at {
   color: $orange;
-  font-weight: bold;
+  //font-weight: bold;
 }
 style.at-rule {
   color: $orange;
-  font-weight: bold;
+  //font-weight: bold;
 }
 
 style.at-rule.media.at {
   color: $orange;
-  font-weight: bold;
+  //font-weight: bold;
 }
 style.media-query-list.operator {
   color: $orange;
@@ -284,7 +284,7 @@ style.media-feature.keyword {
 
 style.include.at {
   color: $orange;
-  font-weight: bold;
+//  font-weight: bold;
 }
 style.include.name {
     color: $blue;
@@ -292,7 +292,7 @@ style.include.name {
 
 
 style.selector.element {
-  font-weight: bold;
+  //font-weight: bold;
   color: $white;
 }
 style.selector.identifier.id {
